@@ -1,0 +1,265 @@
+/*---notification-bar */
+.notification-bar {
+    background-color: #eeeeee;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 4px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.scroll-wrapper {
+    display: inline-block;
+    animation: scrollText 40s linear infinite;
+}
+
+/* Pause animation when user hovers anywhere */
+.notification-bar:hover .scroll-wrapper {
+    animation-play-state: paused;
+}
+
+.scroll-content {
+    display: inline-block;
+}
+
+.notification-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.notification-icon {
+    width: 40px;
+    height: 22px;
+    margin-right: 6px;
+}
+
+.notification-link {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.notification-link:hover {
+    color: #2259ff;
+
+}
+
+.notification-end {
+    color: #999;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(35%);
+    }
+
+    100% {
+        transform: translateX(-35%);
+    }
+}
+
+/* logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16vh;
+    /* full screen height */
+    background-color: #f8f9fa;
+    /* light background */
+
+}
+
+.logo-container img {
+    height: 85px;
+    width: 100%;
+
+}
+
+
+/* header */
+/* Header styles */
+.navbar {
+    background: #a51c30;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+
+.nav-link {
+    color: #ffffff !important;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 0.85rem;
+
+}
+
+.nav-link:hover {
+    color: #f0f0f0 !important;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.bi-chevron-down {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.has-submenu:hover .bi-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.custom-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background: #3b3a3a;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    border-radius: 0 0 6px 6px;
+    min-width: 180px;
+    z-index: 999;
+}
+
+.has-submenu:hover .custom-dropdown {
+    display: block;
+}
+
+.custom-dropdown .dropdown-item {
+    color: #fff !important;
+    display: block;
+    text-decoration: none;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #3b3a3a;
+    color: #bdbaba !important;
+}
+/* Sticky header when scrolling */
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  background: #a51c30;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* When normal (not sticky) */
+.navbar {
+  background: #a51c30;
+  font-weight: 600;
+  padding: 10px 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Footer*/
+.footer-section {
+    background-color: #0d0d0d;
+    color: #ccc;
+    position: relative;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #a30000;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.footer-subheading {
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  background-color: #222222;
+  color: #fff;
+}
+
+.footer-copy {
+  flex: 1;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.visitor-counter {
+  flex: 1;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.visitor-box {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  padding: 2px 6px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+.footer-social {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-social a img {
+  width: 26px;
+  height: 26px;
+  margin: 0 6px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+}
+
+/* 📱 Responsive: center everything on small screens */
+@media (max-width: 768px) {
+  .footer-copy,
+  .visitor-counter,
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 8px;
+  }
+}

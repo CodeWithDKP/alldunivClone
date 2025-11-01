@@ -1,0 +1,613 @@
+/*Home*/
+.hero-carousel {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 80vh;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn.left {
+    left: 20px;
+}
+
+.carousel-btn.right {
+    right: 20px;
+}
+
+/*video-Section*/
+/* ---------- Video Section ---------- */
+.video-section {
+    position: relative;
+    margin-top: -150px;
+    /* slight overlap above */
+    z-index: 5;
+}
+
+/* ---------- Container ---------- */
+.video-container {
+    background-color: #fff;
+    /* solid background (fixes transparency issue) */
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(46, 45, 45, 0.3);
+    overflow: hidden;
+    padding: 0;
+}
+
+/* ---------- Video ---------- */
+.home-video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+.home-video:focus {
+    outline: none;
+}
+
+/* ---------- Icon Row ---------- */
+.home-icons-row {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #fff;
+    justify-content: center;
+}
+
+/* ---------- Each Icon ---------- */
+.home-icon {
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Divider between icons */
+.home-icon.with-divider::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background-color: #ccc;
+
+}
+
+/* ---------- Icon Image ---------- */
+.icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+
+}
+
+/* ---------- Text ---------- */
+.icon-text {
+    font-weight: 700;
+    color: #a51c30;
+    margin: 0;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+/* ----------Announcement Section ---------- */
+.announcement-section {
+    background-color: #fff;
+    position: relative;
+
+}
+
+.announcement-div {
+
+    border-radius: 10px;
+    padding-left: calc(var(--bs-gutter-x) * .0);
+}
+
+/* ---------- Row 1 ---------- */
+.announcement-title {
+    font-weight: 900;
+    font-size: 1.9rem;
+    color: #222;
+    text-transform: uppercase;
+
+}
+
+.announcement-title-div {
+    margin-bottom: 5px;
+}
+
+.announcement-line {
+    border: none;
+    border-top: 1.5px solid #000000;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* ---------- Left Column ---------- */
+.announcement-left {
+    box-shadow: 0 0px 1.2px rgba(46, 45, 45, 0.3);
+    overflow: hidden;
+    padding: 0;
+    margin-left: 10px;
+
+}
+
+.announcement-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+
+}
+
+.announcement-date {
+    font-size: 1rem;
+    color: #999999;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.announcement-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.announcement-btn {
+    border: none;
+    color: #a51c30;
+    background-color: white;
+    text-align: left;
+    font-weight: 700;
+}
+
+/* ---------- Right Column (Scrolling List) ---------- */
+.scroll-container-announcement {
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 20px;
+}
+
+.scroll-content-announcement {
+    animation: scroll-up 40s linear infinite;
+}
+
+.scroll-item-announcement {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.scroll-date-announcement {
+    font-size: 0.85rem;
+    color: #a51c30;
+}
+
+.scroll-text-announcement {
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.4;
+}
+
+.scroll-icon-announcement {
+    width: 50px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.announcement-right-btn {
+    border: none;
+    color: #a51c30;
+    background-color: white;
+    font-weight: 700;
+}
+
+/* Scroll Animation */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(80%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* ---------- Button ---------- */
+.btn-dark {
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Important Links Section */
+.impLinks-section {
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.impContainer {
+    padding-left: calc(var(--bs-gutter-x) * .0);
+    padding-right: calc(var(--bs-gutter-x) * .0);
+}
+
+.container {
+    padding-left: calc(var(--bs-gutter-x) * .0);
+    padding-right: calc(var(--bs-gutter-x) * .0);
+}
+
+.impLinks-carousel {
+    position: relative;
+    overflow: hidden;
+    background-color: #eeeeee;
+
+}
+
+.impLinks-slider {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.impLinks-track {
+    display: flex;
+    width: 100%;
+}
+
+.impLink-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* 👈 vertical layout */
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 0px;
+    font-size: 0.95rem;
+    padding: 10px 0;
+    padding-left: 15px;
+}
+
+.imp-date {
+    color: #a51c30;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.imp-text {
+    color: #191919;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+/* Arrows */
+.imp-arrow {
+    background: transparent;
+    border: none;
+    color: #212121;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 14px;
+    padding-right: 15px;
+}
+
+/* Button */
+.impLinks-btn {
+    background-color: #a51c30;
+    color: #ffffff;
+    border: none;
+    padding: 20px 20px;
+
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.impLinks-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .impLink-item {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+}
+
+/* Album Section */
+.album-section {
+    background-color: #ffffff;
+   
+}
+
+.album-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+ 
+}
+
+/* Image wrapper */
+.album-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* ensures overlay & image match */
+}
+
+/* Image */
+.album-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* matches card corners */
+}
+
+/* Black fade overlay */
+.album-img-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  pointer-events: none;
+}
+
+/* Profession text on image */
+.profession-overlay {
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8); /* makes text pop */
+  letter-spacing: 0.3px;
+  z-index: 1;
+}
+
+
+.album-info {
+    background: #fff;
+}
+
+.album-name {
+    color: #242424;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.album-role {
+    color: #a51c30;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .album-card {
+        margin-bottom: 20px;
+    }
+
+    .album-name {
+        font-size: 0.95rem;
+    }
+
+    .album-role {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*--Online portal--*/
+/* ---------- Portal Section ---------- */
+.portalSection {
+  background-color: #eeeeee;
+  color: #fff;
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.portal-title {
+  color: #333333;
+  font-weight: 800;
+  font-size: 2.3rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 30px;
+}
+
+/* Wrapper (replaces row/columns) */
+.portal-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px 28px; /* row gap, column gap */
+  margin: 0 60px; /* adjustable left-right margin */
+}
+
+/* Cards */
+.portal-card {
+  background-color: #a51c30;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 2px;
+  padding: 1px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Icon */
+.portal-icon {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-icon img {
+  width: 40px;
+  height: 28px;
+}
+
+/* Text */
+.portal-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1px 20px;
+  white-space: nowrap;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .portal-links-wrapper {
+    margin: 0 20px;
+    gap: 14px;
+  }
+
+  .portal-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- Useful Links Section ---------- */
+.usefulLinks-section {
+  background-color: #ffffff;
+}
+
+.usefulLinks-title {
+  color: #333;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Wrapper */
+.usefulLinks-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+/* Track */
+.usefulLinks-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  transition: transform 0.6s ease-in-out; /* <-- smoother visual transition */
+}
+
+
+.usefulLinks-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each Item */
+.usefulLinks-item {
+  flex: 0 0 auto;
+  background: #ffffff;
+  border: 3px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 6px;
+ 
+}
+
+.usefulLinks-item img {
+  width: 180px;
+  height: 60px;
+  object-fit: fill;
+}
+
+
+/* Arrows */
+.usefulLinks-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usefulLinks-arrow.left {
+  left: 10px;
+}
+
+.usefulLinks-arrow.right {
+  right: 10px;
+}
+
+.usefulLinks-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .usefulLinks-item img {
+    width: 130px;
+  }
+}
