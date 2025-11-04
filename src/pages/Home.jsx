@@ -1,5 +1,6 @@
 import { useHomeData } from "../dataContext/homeData";
 import "../assets/style/home.css";
+import { Link } from "react-router-dom";
 import { useRef, useState, useEffect } from "react";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
@@ -102,8 +103,10 @@ function Home() {
                                 className={`col-6 col-md-2 d-flex align-items-center justify-content-center home-icon ${index < videoSection.img.length - 1 ? "with-divider" : ""
                                     }`}
                             >
-                                <img src={item.img} alt={item.text} className="icon-img me-2" />
-                                <p className="icon-text">{item.text}</p>
+                                <Link to="/convocation" className="d-flex align-items-center text-decoration-none">
+                                    <img src={item.img} alt={item.text} className="icon-img me-2" />
+                                    <p className="icon-text">{item.text}</p>
+                                </Link>
                             </div>
                         ))}
                     </div>
@@ -140,9 +143,12 @@ function Home() {
                             />
                             <p className="announcement-date">{announcement.imgData.date}</p>
                             <p className="announcement-text">{announcement.imgData.text}</p>
-                            <button className="announcement-btn">
-                                {announcement.imgData.button}
-                            </button>
+                            <Link to="/convocation" className="d-flex align-items-center text-decoration-none">
+                                <button className="announcement-btn">
+                                    {announcement.imgData.button}
+                                </button>
+                            </Link>
+
                         </div>
 
                         {/* Right Column (Scrolling News) */}
@@ -152,22 +158,27 @@ function Home() {
                                     {announcement.info.data.map((item, index) => (
                                         <div key={index} className="scroll-item-announcement d-flex align-items-start mb-3">
                                             <div className="me-2">
-                                                <p className="scroll-date-announcement mb-1">{item.date}</p>
-                                                <p className="scroll-text-announcement mb-0">
-                                                    {item.information}
-                                                    <img
-                                                        src={announcement.info.icon}
-                                                        alt="new icon"
-                                                        className="scroll-icon-announcement ms-2"
-                                                    />
-                                                </p>
+                                                <Link to="/convocation" className=" align-items-center text-decoration-none">
+                                                    <p className="scroll-date-announcement mb-1">{item.date}</p>
+                                                    <p className="scroll-text-announcement mb-0">
+                                                        {item.information}
+                                                        <img
+                                                            src={announcement.info.icon}
+                                                            alt="new icon"
+                                                            className="scroll-icon-announcement ms-2"
+                                                        />
+                                                    </p>
+                                                </Link>
+
                                             </div>
                                         </div>
                                     ))}
                                 </div>
                             </div>
-                            <div className="text-end">
-                                <button className="announcement-right-btn">{announcement.info.button}</button>
+                            <div className="announcement-right-btn-div">
+                                <Link to="/convocation" className="text-decoration-none">
+                                    <button className="announcement-right-btn">{announcement.info.button}</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -190,6 +201,7 @@ function Home() {
                                     >
                                         {importentLinks.links.map((item, index) => (
                                             <div className="impLink-item text-white" key={index}>
+
                                                 <span className="imp-date">{item.date}</span>
                                                 <a href="#" className="imp-text">
                                                     {item.text}
@@ -213,14 +225,16 @@ function Home() {
 
                         {/* Right Column: Button with Icon */}
                         <div className="col-12 col-md-3 text-center text-md-end mt-3 mt-md-0">
-                            <button className="impLinks-btn d-inline-flex align-items-center">
-                                <img
-                                    src={importentLinks.button.icon}
-                                    alt="icon"
-                                    className="me-2"
-                                />
-                                {importentLinks.button.text}
-                            </button>
+                            <Link to="/convocation" className=" text-decoration-none">
+                                <button className="impLinks-btn d-inline-flex align-items-center">
+                                    <img
+                                        src={importentLinks.button.icon}
+                                        alt="icon"
+                                        className="me-2"
+                                    />
+                                    {importentLinks.button.text}
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -233,14 +247,17 @@ function Home() {
                             <div className="col-12 col-sm-6 col-md-3" key={index}>
                                 <div className="album-card text-start">
                                     <div className="album-img-wrapper position-relative">
-                                        <img
-                                            src={person.img}
-                                            alt={person.Name}
-                                            className="img-fluid rounded-top"
-                                        />
-                                        <span className="profession-overlay">
-                                            {person.professionName}
-                                        </span>
+
+                                        <Link to="/convocation" className="text-decoration-none">
+                                            <img
+                                                src={person.img}
+                                                alt={person.Name}
+                                                className="img-fluid rounded-top"
+                                            />
+                                            <span className="profession-overlay">
+                                                {person.professionName}
+                                            </span>
+                                        </Link>
                                     </div>
                                     <div className="album-info py-3">
                                         <h6 className="album-name mb-1">{person.Name}</h6>
@@ -258,14 +275,19 @@ function Home() {
                     {/* Section Title */}
                     <h2 className="portal-title mb-4">{portal.title}</h2>
 
-                    {/* Portal Links (flex wrap instead of row/columns) */}
+                    {/* PFortal Links (flex wrap instead of row/columns) */}
                     <div className="portal-links-wrapper">
                         {portal.data.map((item, index) => (
                             <div key={index} className="portal-card d-flex align-items-center">
                                 <div className="portal-icon me-2">
-                                    <img src={item.icon} alt={item.text} />
+                                    <Link to="/newsletter" className="text-decoration-none">
+                                        <img src={item.icon} alt={item.text} />
+                                    </Link>
                                 </div>
-                                <span className="portal-text">{item.text}</span>
+                                <Link to="/newsletter" className="text-decoration-none text-white">
+                                    <span className="portal-text">{item.text}</span>
+                                </Link>
+
                             </div>
                         ))}
                     </div>
@@ -273,39 +295,42 @@ function Home() {
             </section>
             {/*useful Links*/}
             <section className="usefulLinks-section py-5">
-  <div className="container text-center position-relative">
-    <h2 className="usefulLinks-title mb-4">USEFUL LINKS</h2>
+                <div className="container text-center position-relative">
+                    <h2 className="usefulLinks-title mb-4">USEFUL LINKS</h2>
 
-    <div
-      className="usefulLinks-wrapper"
-      onMouseEnter={() => setShowArrows(true)}
-      onMouseLeave={() => setShowArrows(false)}
-    >
-      {/* Left Arrow */}
-      {showArrows && (
-        <button className="usefulLinks-arrow left" onClick={usefulhandlePrev}>
-          &#10094;
-        </button>
-      )}
+                    <div
+                        className="usefulLinks-wrapper"
+                        onMouseEnter={() => setShowArrows(true)}
+                        onMouseLeave={() => setShowArrows(false)}
+                    >
+                        {/* Left Arrow */}
+                        {showArrows && (
+                            <button className="usefulLinks-arrow left" onClick={usefulhandlePrev}>
+                                &#10094;
+                            </button>
+                        )}
 
-      {/* Scrollable Track */}
-      <div className="usefulLinks-track" ref={scrollRef}>
-        {usefulLinks.map((img, index) => (
-          <div key={index} className="usefulLinks-item">
-            <img src={img} alt={`useful-link-${index}`} />
-          </div>
-        ))}
-      </div>
+                        {/* Scrollable Track */}
+                        <div className="usefulLinks-track" ref={scrollRef}>
+                            {usefulLinks.map((img, index) => (
+                                <div key={index} className="usefulLinks-item">
+                                    <Link to="/convocation" className="text-decoration-none">
+                                        <img src={img} alt={`useful-link-${index}`} />
+                                    </Link>
 
-      {/* Right Arrow */}
-      {showArrows && (
-        <button className="usefulLinks-arrow right" onClick={usefulhandleNext}>
-          &#10095;
-        </button>
-      )}
-    </div>
-  </div>
-</section>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Right Arrow */}
+                        {showArrows && (
+                            <button className="usefulLinks-arrow right" onClick={usefulhandleNext}>
+                                &#10095;
+                            </button>
+                        )}
+                    </div>
+                </div>
+            </section>
 
 
         </>

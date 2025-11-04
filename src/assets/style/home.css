@@ -192,7 +192,8 @@
     border: none;
     color: #a51c30;
     background-color: white;
-    text-align: left;
+    text-align: center;
+    padding-left: 0px;
     font-weight: 700;
 }
 
@@ -202,10 +203,13 @@
     overflow: hidden;
     position: relative;
     margin-left: 20px;
+    width: 112%;
+
 }
 
 .scroll-content-announcement {
     animation: scroll-up 40s linear infinite;
+   
 }
 
 .scroll-item-announcement {
@@ -229,13 +233,21 @@
     height: 25px;
     vertical-align: middle;
 }
-
+.announcement-right-btn-div{
+    display: flex;
+  justify-content: flex-end; /* pushes button to right end */
+  align-items: center;
+  width: 117%;
+}
 .announcement-right-btn {
     border: none;
     color: #a51c30;
     background-color: white;
     font-weight: 700;
+
+    
 }
+
 
 /* Scroll Animation */
 @keyframes scroll-up {
