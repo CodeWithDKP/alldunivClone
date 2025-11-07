@@ -44,7 +44,7 @@ function Home() {
         );
     };
 
-    // Auto-slide forward continuously
+    // Auto-slide forward continuously- imp links
     useEffect(() => {
         const interval = setInterval(() => {
             setImpCurrentIndex((prev) => (prev + 1) % totalItems);
@@ -53,7 +53,7 @@ function Home() {
         return () => clearInterval(interval);
     }, [totalItems]);
 
-
+// useful link 
     const scrollRef = useRef(null);
     const [showArrows, setShowArrows] = useState(false);
 

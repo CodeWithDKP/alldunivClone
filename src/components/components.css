@@ -82,12 +82,13 @@
 }
 
 
-/* header */
+
 /* Header styles */
 .navbar {
     background: #a51c30;
     font-weight: 600;
     padding: 10px 50px;
+    position: relative;
 }
 
 
@@ -127,6 +128,7 @@
     padding: 0;
     margin: 0;
     margin-top: 10px;
+    /*padding-top: 30px;*/
     border-radius: 0 0 6px 6px;
     min-width: 180px;
     z-index: 999;

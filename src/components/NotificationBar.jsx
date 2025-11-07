@@ -11,13 +11,15 @@ function NotificationBar() {
       <div className="scroll-wrapper">
         <div className="scroll-content">
           {messages.map((msg, index) => (
+             <Link to="/convocation" className="text-decoration-none">
             <span key={index} className="notification-item">
               <img src={icon} alt="new" className="notification-icon" />
-              <Link to="/" className="notification-link">
+              <Link to="/Academics" className="notification-link">
                 {msg}
               </Link>
               <span className="notification-end">{end}</span>
             </span>
+            </Link>
           ))}
         </div>
       </div>
