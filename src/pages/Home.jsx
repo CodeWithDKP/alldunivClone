@@ -8,9 +8,9 @@ function Home() {
     const { hero } = useHomeData();
     const { videoSection, announcement, importentLinks, album, portal, usefulLinks } = useHomeData();
 
-
     const [currentIndex, setCurrentIndex] = useState(0);
-
+  //Error bounderies Test
+    throw new Error("Test error in Home page");
     // Auto slide every 3 seconds
     useEffect(() => {
         const interval = setInterval(() => {

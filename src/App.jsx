@@ -1,4 +1,5 @@
 import { Suspense, lazy } from "react";
+import ErrorBoundary from "./components/ErrorBoundary";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HeaderFooterProvider } from "./dataContext/headerFooter";
 import { HomeDataProvider } from "./dataContext/homeData";
@@ -6,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NotificationBar from "./components/NotificationBar";
 import Logo from "./components/Logo";
+import './App.css';
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/Home"));
@@ -27,30 +29,38 @@ function App() {
   return (
     <Router>
       <HeaderFooterProvider>
-        <NotificationBar/>
-        <Logo/>
-        <Header />
-        <HomeDataProvider>
-          <Suspense fallback={<div className="text-center mt-5">Loading...</div>}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/administration" element={<Administration />} />
-              <Route path="/academics" element={<Academics />} />
-              <Route path="/students" element={<Students />} />
-              <Route path="/research" element={<Research />} />
-              <Route path="/facilities" element={<Facilities />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/alumni" element={<Alumni />} />
-              <Route path="/colleges" element={<Colleges />} />
-              <Route path="/endowment" element={<Endowment />} />
-              <Route path="/iqac" element={<IQAC />} />
-              <Route path="/newsletter" element={<Newsletter />} />
-              <Route path="/convocation" element={<Convocation />} />
-            </Routes>
-          </Suspense>
-        </HomeDataProvider>
-        <Footer />
+        <Suspense fallback={
+          <div className="loading-spinner-container">
+            <div className="loading-spinner"></div>
+          </div>
+        }>
+
+          <HomeDataProvider>
+            <ErrorBoundary>
+              <NotificationBar />
+              <Logo />
+              <Header />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/administration" element={<Administration />} />
+                <Route path="/academics" element={<Academics />} />
+                <Route path="/students" element={<Students />} />
+                <Route path="/research" element={<Research />} />
+                <Route path="/facilities" element={<Facilities />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/alumni" element={<Alumni />} />
+                <Route path="/colleges" element={<Colleges />} />
+                <Route path="/endowment" element={<Endowment />} />
+                <Route path="/iqac" element={<IQAC />} />
+                <Route path="/newsletter" element={<Newsletter />} />
+                <Route path="/convocation" element={<Convocation />} />
+              </Routes>
+              <Footer />
+            </ErrorBoundary>
+          </HomeDataProvider>
+
+        </Suspense>
       </HeaderFooterProvider>
     </Router>
   );
