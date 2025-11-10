@@ -80,7 +80,13 @@
     width: 100%;
 
 }
+@media (max-width: 576px) {
+   .logo-container img {
+    height: 50px;
+    width: 90%;
 
+} 
+}
 
 
 /* Header styles */
@@ -166,6 +172,9 @@
   font-weight: 600;
   padding: 10px 50px;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 576px) {
+
 }
 
 /* Footer*/

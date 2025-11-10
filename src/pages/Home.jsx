@@ -9,8 +9,8 @@ function Home() {
     const { videoSection, announcement, importentLinks, album, portal, usefulLinks } = useHomeData();
 
     const [currentIndex, setCurrentIndex] = useState(0);
-  //Error bounderies Test
-    throw new Error("Test error in Home page");
+    //Error bounderies Test
+    //throw new Error("Test error in Home page");
     // Auto slide every 3 seconds
     useEffect(() => {
         const interval = setInterval(() => {
@@ -53,7 +53,7 @@ function Home() {
         return () => clearInterval(interval);
     }, [totalItems]);
 
-// useful link 
+    // useful link 
     const scrollRef = useRef(null);
     const [showArrows, setShowArrows] = useState(false);
 
