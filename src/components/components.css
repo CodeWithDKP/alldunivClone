@@ -148,6 +148,7 @@
     color: #fff !important;
     display: block;
     text-decoration: none;
+    font-size: 0.85rem;
 }
 
 .custom-dropdown .dropdown-item:hover {
