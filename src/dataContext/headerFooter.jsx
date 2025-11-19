@@ -26,50 +26,99 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "About",
-                path: "/about",
+                path: "#",
                 subLinks: [
-                    { name: "About University", path: "/about" },
-                    { name: "Mission & Vision", path: "/about" },
-                    { name: "Acts and Statues", path: "/about" },
-                    { name: "Ordinance", path: "/about" },
-                    { name: "CCS (Conduct) Rules", path: "/about" },
-                    { name: "University MoU's", path: "/about" },
-                    { name: "RTI", path: "/about" },
-                    { name: "Budget Information", path: "/about" },
-                    { name: "Internal Quality Assurance Cell", path: "/about" },
-                    { name: "Institutional Academic Integrity Panel (IAIP)", path: "/about" },
-                    { name: "Institutional Ethics Review Board (IERB)", path: "/about" },
-                    { name: "The Institutional Biosafety Committee (IBSC)", path: "/about" },
-                    { name: "University Report", path: "/about" },
-                    { name: "Archives", path: "/about" },
-                ],
+                    { name: "About University", path: "/about/university" },
+                    { name: "Mission & Vision", path: "/about/mission-vision" },
+                    { name: "Acts and Statues", path: "/about/acts-statues" },
+                    { name: "Ordinance", path: "/about/ordinance" },
+                    { name: "CCS (Conduct) Rules", path: "/about/ccs-rules" },
+                    { name: "University MoU's", path: "/about/mou" },
+                    { name: "RTI", path: "/about/rti" },
+                    { name: "Budget Information", path: "/about/budget" },
+                    { name: "Internal Quality Assurance Cell", path: "/about/iqac" },
+                    { name: "Institutional Academic Integrity Panel (IAIP)", path: "/about/iaip" },
+                    { name: "Institutional Ethics Review Board (IERB)", path: "/about/ierb" },
+                    { name: "The Institutional Biosafety Committee (IBSC)", path: "/about/ibsc" },
+                    {
+                        name: "University Report", path: "#",
+                        subLinks: [
+                            { name: "Annual Report", path: "/about/archives/annual-report" },
+                            { name: "Annual Quality Assurance Report (AQAR)", path: "/about/archives/aqar" },
+                            { name: "AISHE", path: "/about/archives/aishe" },
+                            { name: "NIRF at University Report", path: "/about/archives/nirf" },]
+                    },
+
+                    {
+                        name: "Archives",
+                        path: "#",
+                        subLinks: [
+                            { name: "Archived News & Updates", path: "/about/archives/news-updates" },
+                            { name: "Result", path: "/about/archives/result" },
+                            { name: "Recruitment", path: "/about/archives/recruitment" },
+                            { name: "Tender", path: "/about/archives/tender" },
+                        ],
+                    },
+                ]
+
             },
 
             {
                 name: "Administration",
-                path: "/administration",
+                path: "#",
                 subLinks: [
-                    { name: "Vice Chancellor", path: "/administration" },
-                    { name: "Registrar", path: "/administration" },
-                    { name: "Finance Officer", path: "/administration" },
-                    { name: "Administrative Staff", path: "/administration" },
-                    { name: "Dean of Academic Affairs", path: "/administration" },
-                    { name: "Controller of Examinations", path: "/administration" },
-                    { name: "Librarian", path: "/administration" },
-                    { name: "Chief Proctor", path: "/administration" },
-                    { name: "Public Relations Officer (PRO)", path: "/administration" },
-                    { name: "Internal Audit Officer", path: "/administration" },
-                    { name: "Director of Research", path: "/administration" },
-                    { name: "Dean of Students Welfare (DSW)", path: "/administration" },
-                    { name: "Executive Council", path: "/administration" },
-                    { name: "University Court", path: "/administration" },
-                    { name: "Joint Registrar", path: "/administration" },
-                ],
+                    { name: "Visitor", path: "/administration/visitor" },
+                    { name: "Chief Rector", path: "/administration/chief-rector" },
+                    { name: "Chancellor", path: "/administration/chancellor" },
+                    { name: "Vice Chancellor", path: "/administration/vice-chancellor" },
+                    { name: "Deans", path: "/administration/deans" },
+                    { name: "Registrar", path: "/administration/registrar" },
+                    { name: "Finance Officer", path: "/administration/finance-officer" },
+                    { name: "PRO", path: "/administration/pro" },
+                    { name: "Legal Cell", path: "/administration/legal-cell" },
+                    {
+                        name: "Statutory Bodies",
+                        path: "#",
+                        subLinks: [
+                            { name: "The Court", path: "/administration/statutory-bodies/court" },
+                            {
+                                name: "Executive Council",
+                                path: "/administration/statutory-bodies/executive-council",
+                                subLinks: [
+                                    { name: "Minutes of Previous Executive Council Meetings", path: "/administration/statutory-bodies/executive-council/minutes" },
+                                    { name: "Executive Council", path: "/administration/statutory-bodies/executive-council/members" }, // Assuming this refers to the list of members
+                                ]
+                            },
+                            {
+                                name: "Academic Council",
+                                path: "/administration/statutory-bodies/academic-council",
+                                subLinks: [
+                                    { name: "Minutes of Previous Academic Council Meetings", path: "/administration/statutory-bodies/academic-council/minutes" },
+                                    { name: "List of Academic Council Members", path: "/administration/statutory-bodies/academic-council/members" },
+                                ]
+                            },
+                            { name: "Finance Committee", path: "/administration/statutory-bodies/finance-committee" },
+                            { name: "Others", path: "#",
+                                subLinks:[{name:"International Students Advisor",path: "/administration/statutory-bodies/others/advisor"}]
+                             },
+                        ]
+                    },
+                    { name: "Head of Departments", path: "/administration/hod" },
+                    { name: "Proctor", path: "/administration/proctor" },
+                    { name: "Librarian", path: "/administration/librarian" },
+                    { name: "Controller of Examinations", path: "/administration/controller-of-examinations" },
+                    { name: "Directors/Coordinators", path: "/administration/directors-coordinators" },
+                    { name: "Telephone Directory", path: "/administration/telephone-directory" },
+                    { name: "Rajbhasha Cell", path: "/administration/rajbhasha-cell" },
+                    { name: "Purchase and Store Department", path: "/administration/purchase-store" },
+                    { name: "Former Chancellors", path: "/administration/former-chancellors" },
+                    { name: "Former Vice Chancellors", path: "/administration/former-vice-chancellors" },
+                ]
             },
 
             {
                 name: "Academics",
-                path: "/academics",
+                path: "#",
                 subLinks: [
                     { name: "Departments", path: "/academics" },
                     { name: "Courses Offered", path: "/academics" },
@@ -85,7 +134,7 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "Students",
-                path: "/students",
+                path: "#",
                 subLinks: [
                     { name: "Student Portal", path: "/students" },
                     { name: "Examination", path: "/students" },
@@ -107,7 +156,7 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "Research",
-                path: "/research",
+                path: "#",
                 subLinks: [
                     { name: "Research Centers", path: "/research" },
                     { name: "Publications", path: "/research" },
@@ -118,7 +167,7 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "Facilities",
-                path: "/facilities",
+                path: "#",
                 subLinks: [
                     { name: "Library", path: "/facilities" },
                     { name: "Sports", path: "/facilities" },
@@ -129,7 +178,7 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "Gallery",
-                path: "/gallery",
+                path: "#",
                 subLinks: [
                     { name: "Photo Gallery", path: "/gallery" },
                     { name: "Video Gallery", path: "/gallery" },
@@ -138,7 +187,7 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "Alumni",
-                path: "/alumni",
+                path: "#",
                 subLinks: [
                     { name: "Alumni Portal", path: "/alumni" },
                     { name: "Meet Events", path: "/alumni" },
@@ -148,7 +197,7 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "Colleges",
-                path: "/colleges",
+                path: "#",
                 subLinks: [
                     { name: "Constituent Colleges", path: "/colleges" },
                     { name: "Affiliated Colleges", path: "/colleges" },
@@ -171,7 +220,7 @@ const HeaderFooterProvider = ({ children }) => {
 
             {
                 name: "Convocation",
-                path: "/convocation",
+                path: "#",
                 subLinks: [
                     { name: "2025 Convocation", path: "/convocation" },
                     { name: "Previous Convocations", path: "/convocation" },

@@ -1,0 +1,56 @@
+ /*About university*/
+.about-top-section{
+    background-color: #333333;
+    padding: 10px;
+}
+.list-items-wrapper{
+    color: #a4a2a2;
+}
+.history-img,img.img-left{
+    max-width: 100%;
+    height: auto;
+    align-items: start;
+ }
+ .breadcrumb-link{
+    text-decoration: none;
+    color: inherit;
+ }
+ .page-title{
+    font-weight: bold;
+ }
+  /*Mission Vision*/
+  .mission-vision-div .heading{
+    margin-bottom: 0px;
+  }
+  .mission-vision-div .title{
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  /*Acts and Statutes*/
+  .Acts-vision-section, h2{
+    margin: 100px auto;
+  }
+  /*MOU*/
+  .mouLink{
+    color: #ec0030;
+  }
+.mou-text-body{
+    font-size: 0.9rem;
+}
+/*RTI*/
+.rti-top-btn{
+    background-color: #a51c30;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    
+    margin-left: 40%;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.rti-vision-section h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
