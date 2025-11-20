@@ -27,7 +27,7 @@
     font-size: 2.5rem;
   }
   /*Acts and Statutes*/
-  .Acts-vision-section, h2{
+  .Acts-section, h2{
     margin: 100px auto;
   }
   /*MOU*/
@@ -45,12 +45,46 @@
     padding: 15px 30px;
     font-size: 1.05rem;
     cursor: pointer;
-    
+    margin-top: 50px;
     margin-left: 40%;
     font-weight: bold;
     border-radius: 3px;
 }
-.rti-vision-section h2{
+.rti-top-btn:hover{
+    background-color: #2b2b2b;
+}
+.rti-section h2{
     margin-top: 50px;
     margin-bottom: 20px;
+}
+/* --- Budget Table Styling --- */
+
+.budget-table th,
+.budget-table td {
+  padding:10px 0px 10px 14px;
+  text-align: left;
+}
+
+
+.budget-th {
+  font-weight: 600;
+  padding-left: 14px ;
+  padding-right: 0px;
+}
+
+
+.budget-td {
+  font-size: 0.9rem;
+  padding-left: 14px ;
+  padding-right: 0px;
+}
+
+.budget-td-action {
+  text-align: center ;
+}
+
+.budget-link {
+  color: #d40000 ;
+  text-decoration: none ;
+  font-weight: 500;
 }

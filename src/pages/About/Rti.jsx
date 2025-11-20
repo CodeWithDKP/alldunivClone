@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export default function CcsRules() {
     const { pages } = useAboutData();
     const data = pages.RTI;
+    const cpio = data.CPIOs;
 
 
     return (
@@ -12,8 +13,8 @@ export default function CcsRules() {
             title={data.title}
             breadcrumb={data.breadcrumb}
         >
-            <section className="rti-vision-section">
-                <div className="container py-5">
+            <section className="rti-section">
+                <div className="container">
                     <Link to="/"><button className="rti-top-btn mb-0">Right to Information Act</button></Link>
 
                     <h2 className="mb-4">{data.sectionTitle}</h2>
@@ -62,8 +63,45 @@ export default function CcsRules() {
 
                 </div>
             </section>
+            <section className="rti-section">
+                <div className="container mt-4">
 
+                    {/* CPIO Table */}
+                    <h3 className="cpioTitle">{cpio.title}</h3>
 
+                    <table className="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Faculty/College</th>
+                                <th>Name, Designation</th>
+                                <th>Contact Number</th>
+                                <th>Department</th>
+                            </tr>
+                        </thead>
+
+                        <tbody className="rti-text-body">
+                            {cpio.cpioList.map((item, index) => (
+                                <tr key={index}>
+                                    <td>{index + 1}</td>
+                                    <td className="cpioList" >{item.facultyOrCollege}</td>
+                                    <td className="cpioList" >{item.nameAndDesignation}</td>
+                                    <td className="cpioList" >{item.contactNumber}</td>
+                                    <td className="cpioList " >{item.department}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+
+                    {/* First Appellate Authority */}
+                    <div className="first-appellate-authority mb-5">
+                        <h3>{cpio.firstAppellateAuthority.title}</h3>
+                        <p><strong>Register</strong> {cpio.firstAppellateAuthority.authority}{cpio.firstAppellateAuthority.address}{cpio.firstAppellateAuthority.contactNo}</p>
+    
+                    </div>
+
+                </div>
+            </section>
 
         </AboutPageWrapper>
     );

@@ -544,6 +544,168 @@ const AboutDataProvider = ({ children }) => {
                         ],
                         note: "The overall disposal rate for RTI applications has improved by 5% in this period compared to the previous financial year."
                     }
+                ],
+                CPIOs: {
+                    title: "C.P.I.O's of Our University and Colleges",
+                    cpioList: [
+                        {
+                            facultyOrCollege: "C.P.I.O.",
+                            nameAndDesignation: "Dr. Haribansh Singh",
+                            contactNumber: "9450546908",
+                            department: "Law"
+                        },
+                        {
+                            facultyOrCollege: "Examinations",
+                            nameAndDesignation: "Maj. Harsh Kumar, Joint Registrar",
+                            contactNumber: "9415140481",
+                            department: "Examinations"
+                        },
+                        {
+                            facultyOrCollege: "Accounts & Finance",
+                            nameAndDesignation: "Mr. A. K. Kanojia, Joint Registrar",
+                            contactNumber: "9454934924",
+                            department: "Accounts & Finance"
+                        },
+                        {
+                            facultyOrCollege: "Faculty of Arts",
+                            nameAndDesignation: "Prof. Mustaq Ali, Professor",
+                            contactNumber: "9453089608",
+                            department: "Department of Hindi"
+                        },
+                        {
+                            facultyOrCollege: "Faculty of Law",
+                            nameAndDesignation: "Dr. J. P. Mishra, Associate Professor",
+                            contactNumber: "9450614875",
+                            department: "Department of Law"
+                        },
+                        {
+                            facultyOrCollege: "Faculty of Science",
+                            nameAndDesignation: "Dr. K. P. Singh, Associate Professor",
+                            contactNumber: "9415309681",
+                            department: "Department of Zoology"
+                        },
+                        {
+                            facultyOrCollege: "Faculty of Commerce",
+                            nameAndDesignation: "Dr. R. K. Singh, Associate Professor",
+                            contactNumber: "9415214657",
+                            department: "Department of Commerce"
+                        },
+                        {
+                            facultyOrCollege: "Allahabad Degree College",
+                            nameAndDesignation: "Dr. S. K. Tripathi, Associate Professor",
+                            contactNumber: "9450590013",
+                            department: "Department of Geography"
+                        },
+                        {
+                            facultyOrCollege: "Arya Kanya Degree College",
+                            nameAndDesignation: "Dr. (Mrs.) Madhurima Varma, Associate Professor",
+                            contactNumber: "0532-2413069",
+                            department: "Department of Education"
+                        },
+                        {
+                            facultyOrCollege: "CMP Degree College",
+                            nameAndDesignation: "Dr. S. K. Jha, Associate Professor",
+                            contactNumber: "9415310910",
+                            department: "Department of Commerce"
+                        },
+                        {
+                            facultyOrCollege: "Ewing Christian College",
+                            nameAndDesignation: "Dr. Alec D. M. David, Associate Professor",
+                            contactNumber: "9450593198",
+                            department: "Department of Chemistry"
+                        },
+                        {
+                            facultyOrCollege: "Hamidia Girls' Degree College",
+                            nameAndDesignation: "Dr. (Mrs.) Amna Farooqui, Associate Professor",
+                            contactNumber: "9415306308",
+                            department: "Department of Geography"
+                        },
+                        {
+                            facultyOrCollege: "Ishwar Sharan Degree College",
+                            nameAndDesignation: "Dr. Ajay Kumar Srivastava, Associate Professor",
+                            contactNumber: "9415316780",
+                            department: "Department of Economics"
+                        },
+                        {
+                            facultyOrCollege: "Jagat Taran Girls' Degree College",
+                            nameAndDesignation: "Dr. Deepshikha Banerji, Associate Professor",
+                            contactNumber: "9415029542",
+                            department: "Department of Philosophy"
+                        },
+                        {
+                            facultyOrCollege: "K P Training Collge",
+                            nameAndDesignation: "Smt. Sharad Srivastava, Associate Professor",
+                            contactNumber: "9415029542",
+                            department: "B.Ed."
+                        },
+                        {
+                            facultyOrCollege: "Rajarshi Tandon Girls' Degree College",
+                            nameAndDesignation: "Dr. (Smt.) Neelima Singh, Associate Professor",
+                            contactNumber: "9450586884",
+                            department: "Department of Political Science"
+                        },
+                        {
+                            facultyOrCollege: "S S Khanna Girls' Degree College",
+                            nameAndDesignation: "Dr. (Smt.) Lalima Singh, Associate Professor",
+                            contactNumber: "9415644674",
+                            department: "Department of Sociology"
+                        },
+                        {
+                            facultyOrCollege: "S P M Government Degree College",
+                            nameAndDesignation: "Dr. Ashok Verma, Associate Professor",
+                            contactNumber: "9415267824",
+                            department: "Department of Zoology"
+                        }
+                    ],
+                    firstAppellateAuthority: {
+                        title: "First Appellate Authority",
+                        authority: ", University of Allahabad",
+                        address: "Prayagraj - 211 002",
+                        contactNo: "0532-2461083"
+                    }
+                },
+
+            },
+            Budget: {
+                title: "Budget Information",
+                breadcrumb: ["Home", "Pages", "Budget Information"],
+                tableHeading:"List of Balance Sheets",
+                balanceSheets: [
+                    {
+                        description: "Balance Sheet FY 2022-23",
+                        action: "Download",
+                        link: "/documents/balance-sheet-2022-2023.pdf"
+                    },
+                    {
+                        description: "Balance Sheet FY 2021-22",
+                        action: "Download",
+                        link: "/documents/balance-sheet-2021-2022.pdf"
+                    },
+                    {
+                        description: "Balance Sheet FY 2020-21",
+                        action: "Download",
+                        link: "/documents/balance-sheet-2020-2021.pdf"
+                    },
+                    {
+                        description: "Balance Sheet FY 2019-20",
+                        action: "Download",
+                        link: "/documents/balance-sheet-2019-2020.pdf"
+                    },
+                    {
+                        description: "Balance Sheet FY 2017-18",
+                        action: "Download",
+                        link: "/documents/balance-sheet-2017-2018.pdf"
+                    },
+                    {
+                        description: "Balance Sheet FY 2016-17",
+                        action: "Download",
+                        link: "/documents/balance-sheet-2016-2017.pdf"
+                    },
+                    {
+                        description: "Balance Sheet FY 2015-16",
+                        action: "Download",
+                        link: "/documents/balance-sheet-2015-2016.pdf"
+                    }
                 ]
             },
         }

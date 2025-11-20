@@ -11,7 +11,7 @@ export default function Mou() {
             title={data.title}
             breadcrumb={data.breadcrumb}
         >
-            <section className="Mou-vision-section">
+            <section className="Mou-section">
                 <div className="container py-5">
                     <table className="table table-striped table-bordered">
                         <thead>
@@ -25,9 +25,9 @@ export default function Mou() {
                         <tbody className="mou-text-body">
                             {data.twinningArrangements.map((item, index) => (
                                 <tr key={index}>
-                                    <td class="text-wrap" style={{ maxWidth: "150px" }}>{item.unitOfTheUniversity}</td>
-                                    <td class="text-wrap" style={{ maxWidth: "150px" }}>{item.institutionName}</td>
-                                    <td class="text-wrap" style={{ maxWidth: "150px" }}>{item.date}</td>
+                                    <td className="text-wrap" style={{ maxWidth: "150px" }}>{item.unitOfTheUniversity}</td>
+                                    <td className="text-wrap" style={{ maxWidth: "150px" }}>{item.institutionName}</td>
+                                    <td className="text-wrap" style={{ maxWidth: "150px" }}>{item.date}</td>
                                     <td>
                                         <a href={item.link} target="_blank" rel="noreferrer" className="text-decoration-none mouLink">
                                             {item.link}
