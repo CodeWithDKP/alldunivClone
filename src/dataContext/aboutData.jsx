@@ -669,7 +669,7 @@ const AboutDataProvider = ({ children }) => {
             Budget: {
                 title: "Budget Information",
                 breadcrumb: ["Home", "Pages", "Budget Information"],
-                tableHeading:"List of Balance Sheets",
+                tableHeading: "List of Balance Sheets",
                 balanceSheets: [
                     {
                         description: "Balance Sheet FY 2022-23",
@@ -708,6 +708,173 @@ const AboutDataProvider = ({ children }) => {
                     }
                 ]
             },
+            Iqac: {
+                title: "Internal Quality Assurance Cell (IQAC)",
+                breadcrumb: ["Home", "Pages", "Internal Quality Assurance Cell (IQAC)"],
+                section1: {
+                    leftList: ["IQAC Home",
+                        "Anual Quality Assurance Report",
+                        "Feedback",
+                        "SSR",
+                        "NAAC 2024",
+                        "AQAR",
+                        "NAAC Team",
+                        "Minutes of IQAC Meeting",
+                        "Minutes for NAAC Report Prepartion Committee Meeting",
+                        "Feedback Analysis Reports",
+                        "ASAR Form (Download)",
+                        "Activites",
+                        "Student Satisfaction Survey",
+                        "Code Of Conduct",
+                        "Institutional Perspective Plan"
+                    ],
+                    rightSide: {
+                        content: {
+                            title: "About Us",
+                            description: "In pursuance of the National Action Plan of the National Assessment and Accreditation Council (NAAC), Bangalore, for performance evaluation, assessment and accreditation and quality up-gradation of institutions of higher education, the NAAC proposes that every accredited institution establish an Internal Quality Assurance Cell (IQAC) as a post-accreditation quality sustenance measure. Since quality enhancement is a continuous process, the IQAC will become a part of an institution's system and work towards realizing the goals of quality enhancement and sustenance. The prime task of the IQAC is to develop a system for conscious, consistent and catalytic improvement in the performance of institutions. The IQAC will make a significant and meaningful contribution in the post-accreditation phase of institutions. During the post-accreditation period, the IQAC will channelize the efforts and measures of an institution towards academic excellence."
+                        },
+                        table: [
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "1",
+                                    "Prof. Sangita Srivastava, Vice Chancellor",
+                                    "Chairperson"
+                                ],
+                                Role: "Head of the Institution"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "2",
+                                    "Dean, Faculty of Science",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "3",
+                                    "Dean, Faculty of Arts",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "4",
+                                    "Dean, Faculty of Commerce",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "5",
+                                    "Dean, Research & Development",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "6",
+                                    "Dean, College Development",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "7",
+                                    "Dean, Student Welfare",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "8",
+                                    "Prof. Ashish Khare, Department of Electronics and Communication",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "9",
+                                    "Prof. Jaya Kapoor, Department of English and Modern European Languages",
+                                    "Member"
+                                ],
+                                Role: "Teacher of the University"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "10",
+                                    "Prof. S. I. Rizvi",
+                                    "Member"
+                                ],
+                                Role: "Management Representative (EC member)"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "11",
+                                    "Registrar, Senior administrative officers",
+                                    "Member"
+                                ],
+                                Role: "Senior Administrative Officers"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "12",
+                                    "Proctor, Senior administrative officers",
+                                    "Member"
+                                ],
+                                Role: "Senior Administrative Officers"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "13",
+                                    "Director, MNNIT, Prayagraj",
+                                    "Member"
+                                ],
+                                Role: "Alumni and Employers Nominee"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "14",
+                                    "Shri Sandeep Kumar, Sr. Director, Infinera, Bangalore",
+                                    "Member"
+                                ],
+                                Role: "Industrialists Nominee"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "15",
+                                    "Brig. Atul Kumar, Army Head Quarters, New Delhi",
+                                    "Member"
+                                ],
+                                Role: "Society Nominee"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "16",
+                                    "Ms. Itee Ojha, Research Scholar, Dept. of Family & Comm. Science",
+                                    "Member"
+                                ],
+                                Role: "Student Nominee"
+                            },
+                            {
+                                InternalQualityAssuranceCellIQAC: [
+                                    "17",
+                                    "Prof. Manoj Kumar, Department of English & MEL",
+                                    "Member Secretary / Coordinator IQAC"
+                                ],
+                                Role: "Senior Teacher of the University"
+                            }
+
+                        ]
+                    }
+                }
+            }
         }
 
     };

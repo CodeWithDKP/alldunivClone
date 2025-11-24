@@ -88,3 +88,22 @@
   text-decoration: none ;
   font-weight: 500;
 }
+/*--Iqac--*/
+.Iqac-container{
+  background-color: #ececec;
+}
+.Iqac-container .col-3{
+background-color: #cccccc;
+margin-right: 2%;
+width: 25%;
+height: 50%;
+}
+.Iqac-div{
+  width: 73%;
+}
+.iqac-main-header {
+  background-color: #bbbbbb !important;  
+
+}
+
+
