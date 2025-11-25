@@ -874,7 +874,463 @@ const AboutDataProvider = ({ children }) => {
                         ]
                     }
                 }
+            },
+            IAIP: {
+                title: "Instutional Academic Integrity Panel (IAIP)",
+                breadcrumb: ["Home", "page", "IAIP"]
+            },
+            IERB: {
+                title: "Institution Ethics Review Board",
+                breadcrumb: ["Home", "page", "Institution Ethics Review Board"],
+                IERB_Overview: {
+                    Name: "The Institutional Ethics Review Board (IERB), University of Allahabad (UoA)",
+                    Established: ["The Institutional Ethics Review Board (IERB) of the University of Allahabad was established in March 2013 with the primary responsibility of upholding the ethical integrity of research involving human participants. Its essential role is to ensure a thorough and competent review of all ethical aspects of research proposals, and to approve and oversee studies—spanning biomedical, behavioral, social science, and epidemiological research—to safeguard the dignity, rights, safety, and well-being of all human participants.", "The IERB convenes regularly (at least once per semester) to review research proposals submitted by faculty members, research scholars, and postgraduate students from various Departments, Institutes, Centres, and Constituent Colleges of the University. These reviews are conducted to ensure strict adherence to the ethical standards established by the University of Allahabad, based on the guidelines of the Indian Council of Medical Research (ICMR), the World Health Organization (WHO), and the Declaration of Helsinki (2024) developed by the World Medical Association (WMA). The IERB is also responsible for formulating and periodically updating the University’s ethical guidelines in alignment with the latest revisions issued by the ICMR, WHO, and other internationally recognized ethical frameworks. "],
+                    Policy_Statement: "ETHICAL CLEARANCE FROM THE IERB IS MANDATORY FOR ALL RESEARCH INVOLVING HUMAN PARTICIPANTS, AND PRIOR APPROVAL MUST BE OBTAINED BEFORE INITIATING THE STUDY."
+                },
+                IERB_Contact: {
+                    heading: "Contact Info IERB, UoA",
+                    Name: "Prof. Ram Manohar Yadav",
+                    Role: "Convenor, IERB",
+                    Department: "Department of Physics, UoA",
+                    Email: "ierb@allduniv.ac.in"
+                },
+                IERB_Constitution: [
+                    {
+                        SNo: 1,
+                        Composition: "Chairperson",
+                        FullName: "Hon'ble Vice-Chancellor or her nominee Prof. Ashish Khare (Hon'ble VC Nominee)",
+                        Designation: "Professor of Computer Science & Registrar UoA",
+                        Affiliation: "Office of the Registrar University of Allahabad Prayagraj-211002"
+                    },
+                    {
+                        SNo: 2,
+                        Composition: "Convenor",
+                        FullName: "Prof. Ram Manohar Yadav",
+                        Designation: "Professor",
+                        Affiliation: "Department of Physics, University of Allahabad Prayagraj-211002"
+                    },
+                    {
+                        SNo: 3,
+                        Composition: "Member",
+                        FullName: "Prof. Dhananjai Yadav",
+                        Designation: "Professor",
+                        Affiliation: "Department of Education, University of Allahabad, Prayagraj-211002"
+                    },
+                    {
+                        SNo: 4,
+                        Composition: "Member",
+                        FullName: "Prof. Bhoomika Rastogi Kar",
+                        Designation: "Professor",
+                        Affiliation: "Centre of Behavioural & Cognitive Science, University of Allahabad, Prayagraj-211002"
+                    },
+                    {
+                        SNo: 5,
+                        Composition: "Invited Member",
+                        FullName: "Prof. Chandranshu Sinha",
+                        Designation: "Professor",
+                        Affiliation: "Department of Psychology, University of Allahabad, Prayagraj-211002"
+                    },
+                    {
+                        SNo: 6,
+                        Composition: "Member",
+                        FullName: "Dr. Niti Kant",
+                        Designation: "Associate Professor",
+                        Affiliation: "Department of Physics, University of Allahabad, Prayagraj-211002"
+                    }
+                ],
+                Proposal_Submission_Details: {
+                    title: "Submission of Proposals for Ethical Approval",
+                    mail: "ierb@allduniv.ac.in",
+                    contentBefore: "All proposals seeking IERB approval must be submitted to the Convenor, IERB,UoA in two hard copies, along with one soft copy emailed to",
+                    contentAfter: "(with the subject line: Proposal for IERB Approval). The soft copy should be a single PDF file containing the completed IERB form and all requisite documents, duly signed by the Principal Investigator (PI), Supervisor and forwarded by the respective Head/Coordinator. Proposals from constituent colleges are required to be forwarded through the Head of the respective University Department. Only proposals submitted in the prescribed format, along with all required annexures and attachments, will be considered for ethical review. The Participant Information Document (PID) and the Consent Form must be provided in English, along with a Hindi translation, and in any other relevant languages as needed.",
+                },
+                Important_Links: [
+                    {
+                        SNo: 1,
+                        Title: "Ethics Review Application Form, UoA",
+                        Link: "Ethics Review Application Form, UoA"
+                    },
+                    {
+                        SNo: 2,
+                        Title: "National Ethical Guidelines for Biomedical and Health Research Involving Human Participants",
+                        Source: "Indian Council of Medical Research 2017",
+                        Link: "https://ethics.ncdirindia.org/asset/pdf/ICMR_National_Ethical_Guidelines.pdf"
+                    },
+                    {
+                        SNo: 3,
+                        Title: "Ethical Requirements For Systematic Review & Meta-Analysis Proposals: \"An Addendum to ICMR National Ethical Guidelines for Biomedical and Health Research Involving Human Participants, 2017\"",
+                        Source: "Indian Council of Medical Research, February 2024",
+                        Link: "https://www.icmr.gov.in/icmrobject/uploads/Guidelines/1724842157_ethical_requirements_for_systematic_review_metaanalysis_proposals_an_addendum.pdf"
+                    },
+                    {
+                        SNo: 4,
+                        Title: "Standards and Operational Guidance for Ethics Review of Health-Related Research with Human Participants",
+                        Source: "World Health Organization (WHO) 2011",
+                        Link: "https://www.who.int/publications/i/item/97892415029488"
+                    },
+                    {
+                        SNo: 5,
+                        Title: "International Ethical Guidelines for Health-related Research Involving Humans",
+                        Source: "Council for International Organizations of Medical Sciences (CIOMS)/ World Health Organization (WHO) 2016",
+                        Link: "https://cioms.ch/wp-content/uploads/2017/01/WEB-CIOMS-EthicalGuidelines.pdf"
+                    },
+                    {
+                        SNo: 6,
+                        Title: "Declaration of Helsinki - Ethical Principles for Medical Research Involving Human Participants",
+                        Source: "World Medical Association 2024",
+                        Link: "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
+                    }
+                ]
+            },
+            IBSC: {
+                title: "The Institutional Biosafety Committee (IBSC)",
+                breadcrumb: ["Home", "page", "The Institutional Biosafety Committee (IBSC)"],
+                contentTitle: "The Institutional Biosafety Committee (IBSC): ",
+                contentDescription: ["The Institutional Biosafety Committee (IBSC), University of Allahabad is the nodal body set up by the University as per the national biosafety regulatory framework and registered and monitored by DBT/RCGM (Review Committee on Genetic Manipulation) on 19/12/2024 as per approval letter No. BT/IBKP/885/2024 of Department of Biotechnology, Govt. of India. ", "As per the Biosafety Regulatory Framework, all activities related to Genetically Engineered organisms (GE organisms) or cells and non-GE hazardous microorganisms and products thereof are regulated as per the Rules for the Manufacture, Use, Import, Export and Storage of Hazardous Microorganisms/Genetically Engineered Organisms or Cells 1989 (known as 'Rules, 1989') notified by the Ministry of Environment, Forest and Climate Change (MoEF&CC), Government of India, under the Environment (Protection) Act, 1986 (EPA 1986)"],
+                contentList: {
+                    title: "The Institutional Biosafety Committee (IBSC)† is solely responsible ",
+                    list: [" To implement and respond to institutional biosafety & biosecurity at the institution level and ", " Evaluation of applications/ reports related to rDNA technology work involving the GE organisms and non-GE hazardous microorganisms in an organisation."]
+                },
+                tableOverview: ["Handbook for Institutional Biosafety Committees, DBT, September 2020.", "Constitution IBSC, UoA Office Contact: ", "Member Secretary, Centre of Biotechnology, UoA", "ibsc.uoa@allduniv.ac.in "],
+                tableHeader: [
+                    { label: "S.No" },
+                    { label: "Composition" },
+                    { label: "Full Name" },
+                    { label: "CurrentDesignation" },
+                    { label: "PresentAffiliation"}
+                ],
+                tableData: [
+                    {
+                        SNo: 1,
+                        Composition: "Chairman",
+                        FullName: "Prof. S. I. Rizvi",
+                        CurrentDesignation: "Professor & Dean (R & D)",
+                        PresentAffiliation: "Department of Biochemistry, University of Allahabad"
+                    },
+                    {
+                        SNo: 2,
+                        Composition: "Member Secretary",
+                        FullName: "Dr. Awadh Bihari Yadav",
+                        CurrentDesignation: "Assistant Professor",
+                        PresentAffiliation: "Centre of Biotechnology, IIDS, University of Allahabad"
+                    },
+                    {
+                        SNo: 3,
+                        Composition: "DBT Nominee",
+                        FullName: "Dr. Beenu Kumar",
+                        CurrentDesignation: "Head & Professor",
+                        PresentAffiliation: "Professor Department of Biochemistry, MLN Medical College, Prayagraj"
+                    },
+                    {
+                        SNo: 4,
+                        Composition: "Biosafety Officer",
+                        FullName: "Dr. Vishwajeet Kr Srivastava",
+                        CurrentDesignation: "Medical Officer",
+                        PresentAffiliation: "Health Centre, University of Allahabad"
+                    },
+                    {
+                        SNo: 5,
+                        Composition: "Outside Expert",
+                        FullName: "Dr. Sintu Kumar Samanta",
+                        CurrentDesignation: "Assistant Professor",
+                        PresentAffiliation: "IIIT Prayagraj"
+                    },
+                    {
+                        SNo: 6,
+                        Composition: "Internal Member",
+                        FullName: "Dr. Neetu Mishra",
+                        CurrentDesignation: "Professor",
+                        PresentAffiliation: "Family and Community Science, University of Allahabad, Prayagraj"
+                    },
+                    {
+                        SNo: 7,
+                        Composition: "Internal Member",
+                        FullName: "Dr. Dinesh Kumar Yadav",
+                        CurrentDesignation: "Assistant Professor",
+                        PresentAffiliation: "Department of Botany, University of Allahabad, Prayagraj"
+                    },
+                    {
+                        SNo: 8,
+                        Composition: "Internal Member",
+                        FullName: "Dr. Rajesh Kumari",
+                        CurrentDesignation: "Assistant Professor",
+                        PresentAffiliation: "Department of Zoology, University of Allahabad, Prayagraj"
+                    },
+                    {
+                        SNo: 9,
+                        Composition: "Internal Member",
+                        FullName: "Dr. Shanthy Sundram",
+                        CurrentDesignation: "Professor",
+                        PresentAffiliation: "Centre of Biotechnology, University of Allahabad, Prayagraj"
+                    }
+                ],
+                process: {
+                    title: "Process",
+                    content: [
+                        "All applications have to be generated via the IBKP online portal (https://ibkp.dbtindia.gov.in/Login/Login) and submitted to the IBSC for consideration. The IBSC will meet at least twice in a year, or more if required, to review all the received applications. Based on the comments for clarifications/revisions, and accordingly, the applicants must submit a revised application for approval. Applicants are expected to be available during the meeting for clarification /discussion, if required by the IBSC.",
+                        "Only the application providing the complete details along with all the required documents as per the IBSC guidelines in a single PDF file submitted to ibsc.uoa@allduniv.ac.in will be considered in the meeting.",
+                        "Detailed guidelines for preparation of project for submission and implementation, investigators must consult the DBT Handbook for Institutional Biosafety Committees (IBSCs), Third Revised Edition, September 2020. ",
+                        "A detailed overview along with instructions and demo for filling and submitting the application was given in the recent workshops conducted by the IBSC UoA and the DBT-RCGM. A quick SOP for the Application Submission Guidelines and approval process is given below. You are requested to prepare and submit the application accordingly."
+                    ]
+                },
+                Submission_of_IBSC_Application: {
+                    Process: "All IBSC applications are to be generated online via I B K P portal.",
+                    IBKP_Portal_URL: "https://ibkp.dbtindia.gov.in/Login/Login",
+                    Credentials_Request: {
+                        Initial_Action: "First time users need to request to IBSC office at ibsc.uoa@allduniv.ac.in to obtain the credentials.",
+                        Email_Subject: "Request for Login credentials at IBKP portal",
+                        Required_Details: [
+                            "Full name",
+                            "School/Centre name",
+                            "E-mail ID (official mail)"
+                        ],
+                        Credential_Handling: "Once registered by the IBSC, the credentials are sent directly to the user at the registered e-mail ID. Keep the credentials safe and confidential. Login password can be changed by the user. The credentials will be required for each login to the IBSC portal, tracking your application, reply to any queries raised by the IBSC/RCGM. Same credentials are to be used for submission of future applications."
+                    },
+                    Application_Steps_Online: [
+                        "Select a suitable category (Agriculture Biotechnology or Medical Biotechnology) from the drop down menu at the center of the webpage.",
+                        "Click on the suitable application link as per the requirement for which IBSC approval is sought. For example, for R & D projects click on the \"To carryout Research & Development\" link.",
+                        "The form should be complete in all respects and all fields/sections should be filled adequately avoiding \"NA\" until totally irreverent to the proposed work.",
+                        "ONLY the regular UoA faculty can be an applicant in the IBSC applications. All the IBSC applications MUST be verified and submitted by the UoA Faculty only.",
+                        "While filling keep saving the form at regular intervals. After filling the form click VERIFY and the completely filled application will be displayed.",
+                        "DOWNLOAD the filled form in PDF format. DO NOT SUBMIT the form at this stage."
+                    ],
+                    Submission_Steps_Offline: [
+                        "Insert your signature and stamp at the designated place.",
+                        "Make a single PDF file of the IBSC application and all the requisite documents (attachments/annexures including sequence/vector accession numbers/details etc. or any other appropriate information).",
+                        "Only the complete and readable applications strictly in the proper format along with all the annexures/attachments (as per instructions/guidelines given by RCGM, IBSC webpage and/or sent from time to time) will be taken up in all future meetings.",
+                        "Send the complete IBSC application in a single PDF file via e-mail to ibsc.uoa@allduniv.ac.in for consideration by the IBSC (Subject line: Application for New IBSC Proposal)."
+                    ],
+                    IBSC_RCGM_Important_Links: {
+                        Secretariat_Links: [
+                            {
+                                Title: "DBT Indian Biosafety Knowledge Portal (IBKP)",
+                                Link: "https://ibkp.dbtindia.gov.in/Login/Login"
+                            },
+                            {
+                                Title: "IBSC Rules, Acts & Guidelines",
+                                Link: "https://ibkp.dbtindia.gov.in/Content/Rules"
+                            },
+                            {
+                                Title: "IBSC related application formats",
+                                Link: "https://ibkp.dbtindia.gov.in/Content/ApplicationFormats"
+                            }
+                        ],
+                        Secretariat_Queries_Emails: [
+                            {
+                                Type: "IBSC Related Queries",
+                                Email: "ibkp2019@dbt.nic.in"
+                            },
+                            {
+                                Type: "RCGM Related Queries",
+                                Email: "rcgm.dbt@nic.in"
+                            }
+                        ],
+                        Guidelines_Handbooks: [
+                            {
+                                Title: "Handbook for Institutional Biosafety Committees (IBSCs), Third Revised Edition, September 2020",
+                                Download: "Download (Link not provided, implied)"
+                            },
+                            {
+                                Title: "Guidelines for the Establishment of Containment Facilities: BSL2 and BSL3 and Certification of BSL3 facility 2020",
+                                Download: "Download (Link not provided, implied)"
+                            },
+                            {
+                                Title: "Revised Simplified Procedures/ Guidelines on Import, Export and Exchange of GE organisms and products thereof for R&D purpose, 2020",
+                                Download: "Download (Link not provided, implied)"
+                            },
+                            {
+                                Title: "Regulations & Guidelines for Recombinant DNA Research and Biocontainment, 2017",
+                                Download: "Download (Link not provided, implied)"
+                            },
+                            {
+                                Title: "Guidelines for the Environmental Risk Assessment of Genetically Engineered Plants, 2016",
+                                Download: "Download (Link not provided, implied)"
+                            }
+                        ]
+                    }
+                }
+            },
+            AnnualReport: {
+                button: "Download Annual Report Format",
+                SAR: {
+                    title: "SAR & Annual Account",
+                    header: {
+                        rows: [
+                            [
+                                { label: "Years", rowSpan: 2 },
+                                { label: "Particulars / Description", rowSpan: 2 },
+                                { label: "PDF Format", colSpan: 2 }
+                            ],
+                            [
+                                { label: "English" },
+                                { label: "Hindi" }
+                            ]
+                        ]
+                    },
+                    data: [
+
+                        {
+                            Years: "2013-14",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2014-15",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2015-16",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2016-17",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2017-18",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2018-19",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2019-20",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2020-21",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2021-22",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2022-23",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2023-24",
+                            Discription: "SAR & Annual Account Report",
+                            English: "View",
+                            Hindi: "View"
+                        }
+
+                    ]
+                },
+                AnnualReports: {
+                    title: "Annual Reports",
+                    header: {
+                        rows: [
+                            [
+                                { label: "Years", rowSpan: 2 },
+                                { label: "Particulars / Description", rowSpan: 2 },
+                                { label: "PDF Format", colSpan: 2 }
+                            ],
+                            [
+                                { label: "English" },
+                                { label: "Hindi" }
+                            ]
+                        ]
+                    },
+                    data: [
+                        {
+                            Years: "2012-13",
+                            Discription: "Annual Report",
+                            English: "View",
+                            Hindi: ""
+                        },
+                        {
+                            Years: "2013-14",
+                            Discription: "Annual Report",
+                            English: "View",
+                            Hindi: ""
+                        },
+                        {
+                            Years: "2014-15",
+                            Discription: "X Annual Report",
+                            English: "View",
+                            Hindi: ""
+                        },
+                        {
+                            Years: "2015-16",
+                            Discription: "XI Annual Report",
+                            English: "View",
+                            Hindi: ""
+                        },
+                        {
+                            Years: "2016-17",
+                            Discription: "XII Annual Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2017-18",
+                            Discription: "XIII Annual Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2018-19",
+                            Discription: "XIV Annual Report",
+                            English: "View",
+                            Hindi: ""
+                        },
+                        {
+                            Years: "2019-20",
+                            Discription: "XV Annual Report",
+                            English: "View",
+                            Hindi: ""
+                        },
+                        {
+                            Years: "2020-21",
+                            Discription: "XVI Annual Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2021-22",
+                            Discription: "XVII Annual Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2022-23",
+                            Discription: "XVIII Annual Report",
+                            English: "View",
+                            Hindi: "View"
+                        },
+                        {
+                            Years: "2023-24",
+                            Discription: "XIX Annual Report",
+                            English: "View",
+                            Hindi: "View"
+                        }
+                    ]
+                }
+
             }
+
         }
 
     };
