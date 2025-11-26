@@ -115,7 +115,19 @@ margin: 0px;
 .ierb-contact-info-mail{
   color:#800000;
 }
-
-
+/*--IBSC--*/
+.ibsc-content p,
+.ibsc-content ul{
+margin: 0;
+padding: 0;
+}
+.ibsc-tables p{
+  margin: 0;
+  padding: 0;
+}
+.ibsc-table1 th,
+.ibsc-table1 td{
+  padding: 0 !important;
+}
 
 

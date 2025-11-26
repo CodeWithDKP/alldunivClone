@@ -991,7 +991,8 @@ const AboutDataProvider = ({ children }) => {
                     title: "The Institutional Biosafety Committee (IBSC)† is solely responsible ",
                     list: [" To implement and respond to institutional biosafety & biosecurity at the institution level and ", " Evaluation of applications/ reports related to rDNA technology work involving the GE organisms and non-GE hazardous microorganisms in an organisation."]
                 },
-                tableOverview: ["Handbook for Institutional Biosafety Committees, DBT, September 2020.", "Constitution IBSC, UoA Office Contact: ", "Member Secretary, Centre of Biotechnology, UoA", "ibsc.uoa@allduniv.ac.in "],
+                tableOverview: ["Handbook for Institutional Biosafety Committees, DBT, September 2020.", "Constitution IBSC, UoA Office Contact: ", "Member Secretary, Centre of Biotechnology, UoA"],
+                mail: "ibsc.uoa@allduniv.ac.in ",
                 tableHeader: [
                     { label: "S.No" },
                     { label: "Composition" },
