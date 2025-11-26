@@ -11,6 +11,7 @@ import Logo from "./components/Logo";
 import './App.css';
 
 // Lazy-loaded pages
+
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Administration = lazy(() => import("./pages/Administration"));
@@ -178,6 +179,7 @@ function App() {
                 <Route path="/about" element={<AboutDataProvider>
                   <About />
                 </AboutDataProvider>} />
+                
                 <Route path="/administration" element={<Administration />} />
                 <Route path="/academics" element={<Academics />} />
                 <Route path="/students" element={<Students />} />

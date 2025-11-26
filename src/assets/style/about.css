@@ -19,8 +19,10 @@
     font-weight: bold;
  }
   /*Mission Vision*/
-  .mission-vision-div .heading{
-    margin-bottom: 0px;
+  .mission-vision-div h2,
+  .mission-vision-div p{
+    margin-bottom: 0px !important;
+    
   }
   .mission-vision-div .title{
     font-weight: bold;

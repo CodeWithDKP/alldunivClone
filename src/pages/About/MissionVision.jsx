@@ -16,7 +16,7 @@ export default function MissionVision() {
           {data.section1.map((section, index)=>(
             <div key={index} className="mission-vision-div">
             <p className="heading">{section.heading}</p>
-            <h2 className="title">{section.title}</h2>
+            <h2 className="title" style={{marginTop:index==2? "50px": "0px"}}>{section.title}</h2>
             <p className="content">{section.data}</p> 
             </div>
           ))};

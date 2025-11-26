@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import history1 from "../assets/about/history1.png";
 import history2 from "../assets/about/history2.png";
 import history3 from "../assets/about/history3.png";
@@ -7,6 +7,7 @@ import { data } from "react-router-dom";
 const AboutDataContext = createContext();
 
 const AboutDataProvider = ({ children }) => {
+
     const aboutData = {
         pages: {
             AboutUniversity: {
@@ -998,7 +999,7 @@ const AboutDataProvider = ({ children }) => {
                     { label: "Composition" },
                     { label: "Full Name" },
                     { label: "CurrentDesignation" },
-                    { label: "PresentAffiliation"}
+                    { label: "PresentAffiliation" }
                 ],
                 tableData: [
                     {
