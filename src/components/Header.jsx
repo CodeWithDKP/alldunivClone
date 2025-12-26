@@ -21,6 +21,9 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
+
+
   return (
     <nav className={`navbar navbar-expand-lg shadow-sm ${isSticky ? "sticky" : ""}`}>
       <div className="container">
@@ -48,17 +51,50 @@ function Header() {
                 {link.subLinks && (
                   <ul className="dropdown-menu custom-dropdown">
                     {link.subLinks.map((sub, i) => (
-                      <li key={i}>
-                        <Link className="dropdown-item" to={link.path}>
+                      <li
+                        key={i}
+                        className={sub.subLinks ? "has-submenu nested" : ""}
+                      >
+                        <Link className="dropdown-item d-flex justify-content-between align-items-center" to={sub.path}
+                        >
                           {sub.name}
+                          {sub.subLinks && <i className="bi bi-chevron-right ms-1 small"></i>}
                         </Link>
+
+                        {sub.subLinks && (
+                          <ul className="dropdown-menu nested-dropdown">
+                            {sub.subLinks.map((nested, j) => (
+                              <li key={j} 
+                              className={sub.subLinks ? "has-submenu subnested" : ""}
+                              >
+                                <Link className="dropdown-item " to={nested.path}>
+                                  {nested.name}
+                                  {nested.subLinks && <i className="bi bi-chevron-right ms-1 small"></i>}
+                                </Link>
+                                {nested.subLinks && (
+                                  <ul className="dropdown-menu subnested-dropdown">
+                                    {nested.subLinks.map((subnested, k) => (
+                                      <li key={k} className="submenu-right">
+                                        <Link className="dropdown-item" to={subnested.path}>
+                                          {subnested.name}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                       </li>
                     ))}
                   </ul>
+
                 )}
               </li>
             ))}
           </ul>
+
         </div>
       </div>
     </nav>

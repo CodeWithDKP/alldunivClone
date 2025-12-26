@@ -1,0 +1,21 @@
+import AboutPageWrapper from "./AboutPageWrapper";
+import "../../assets/style/about.css";
+import { useAboutData } from "../../dataContext/aboutData.jsx";
+export default function Ordinance() {
+  const { pages } = useAboutData();
+  const data = pages.Ordinance;
+
+
+  return (
+    <AboutPageWrapper
+      title={data.title}
+      breadcrumb={data.breadcrumb}
+    >
+      <section className="Acts-vision-section text-center">
+       <h2> There is NO data here... </h2>
+      </section>
+
+
+    </AboutPageWrapper>
+  );
+}
