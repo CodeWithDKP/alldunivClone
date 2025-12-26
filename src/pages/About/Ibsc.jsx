@@ -33,7 +33,7 @@ export default function CcsRules() {
             {data.tableOverview.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
-            <b className="mail">Email: {data.mail}</b>
+            <b className="ibsc-link">Email: {data.mail}</b>
 
             <table className="table ibsc-table1 table-bordered ">
               <thead>
@@ -60,12 +60,21 @@ export default function CcsRules() {
           <div className="ibsc-process">
             <h4>{data.process.title}</h4>
             <p>
-              {data.process.content.map((text, index) => (
+              {data.process.content.map((text) => (
                 <span style={{
-                  display:"block",
-                  marginBottom: index === 2 ? "20px" : "0px"
+                  display:"block"
                 }}>{text}</span>
               ))}
+            </p>
+          </div>
+          <div>
+            <p>
+              <span><b>{data.Submission_of_IBSC_Application.start}</b>{data.Submission_of_IBSC_Application.Process}
+               <span className="ibsc-link">{data.Submission_of_IBSC_Application.IBKP_Portal_URL}</span>
+               <b>{data.Submission_of_IBSC_Application.Credentials_Request.Initial_Action}</b>
+               <b className="ibsc-link">{data.Submission_of_IBSC_Application.Credentials_Request.mail}</b>
+               <b>{data.Submission_of_IBSC_Application.Credentials_Request.Email_Subject}</b>
+              </span>
             </p>
           </div>
         </div>

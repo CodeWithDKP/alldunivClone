@@ -1076,10 +1076,12 @@ const AboutDataProvider = ({ children }) => {
                     ]
                 },
                 Submission_of_IBSC_Application: {
-                    Process: "All IBSC applications are to be generated online via I B K P portal.",
-                    IBKP_Portal_URL: "https://ibkp.dbtindia.gov.in/Login/Login",
+                    start:"Submission of IBSC Application",
+                    Process: "All the IBSC applications are to be generated online via I B K P portal.",
+                    IBKP_Portal_URL: " (https://ibkp.dbtindia.gov.in/Login/Login)",
                     Credentials_Request: {
-                        Initial_Action: "First time users need to request to IBSC office at ibsc.uoa@allduniv.ac.in to obtain the credentials.",
+                        mail:" ibsc.uoa@allduniv.ac.in ",
+                        Initial_Action: "USER Login at IBKP Portal First time users need to request to IBSC office at to obtain the credentials.",
                         Email_Subject: "Request for Login credentials at IBKP portal",
                         Required_Details: [
                             "Full name",
